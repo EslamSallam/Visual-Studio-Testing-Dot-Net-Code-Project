@@ -9,10 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.CupOrderAd
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.CupOrderAdmin.DataAccess", "WiredBrainCoffee.CupOrderAdmin.DataAccess\WiredBrainCoffee.CupOrderAdmin.DataAccess.csproj", "{F561311C-8C00-429A-979A-AE9488D0585C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiredBrainCoffee.CupOrderAdmin.Core.Tests", "WiredBrainCoffee.CupOrderAdmin.Core.Tests\WiredBrainCoffee.CupOrderAdmin.Core.Tests.csproj", "{D0D6209D-A223-4817-A9E2-5A42AEB73409}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C36257FD-7D48-4317-AFB2-ADD31572F21D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,16 +27,9 @@ Global
 		{F561311C-8C00-429A-979A-AE9488D0585C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F561311C-8C00-429A-979A-AE9488D0585C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F561311C-8C00-429A-979A-AE9488D0585C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0D6209D-A223-4817-A9E2-5A42AEB73409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0D6209D-A223-4817-A9E2-5A42AEB73409}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0D6209D-A223-4817-A9E2-5A42AEB73409}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0D6209D-A223-4817-A9E2-5A42AEB73409}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{D0D6209D-A223-4817-A9E2-5A42AEB73409} = {C36257FD-7D48-4317-AFB2-ADD31572F21D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F5EA677-63B4-4034-9427-D542C8F2E0C5}
