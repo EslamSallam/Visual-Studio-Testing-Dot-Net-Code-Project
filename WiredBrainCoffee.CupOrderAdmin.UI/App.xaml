@@ -1,0 +1,10 @@
+﻿<Application x:Class="WiredBrainCoffee.CupOrderAdmin.UI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converter="clr-namespace:WiredBrainCoffee.CupOrderAdmin.UI.Converter"
+             StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <converter:BoolToHiddenConverter x:Key="BoolToHiddenConverter"/>
+    <converter:OrderCreationSuccessBrushConverter x:Key="OrderCreationSuccessBrushConverter"/>
+  </Application.Resources>
+</Application>

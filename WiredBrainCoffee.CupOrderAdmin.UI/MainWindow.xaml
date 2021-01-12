@@ -1,0 +1,47 @@
+﻿<Window x:Class="WiredBrainCoffee.CupOrderAdmin.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:WiredBrainCoffee.CupOrderAdmin.UI.View"
+        xmlns:viewModels="clr-namespace:WiredBrainCoffee.CupOrderAdmin.UI.ViewModel"
+        mc:Ignorable="d"
+        Title="Coffee Cup Order Administration - by Wired Brain Coffee &amp; Thomas Claudius Huber" 
+        MinHeight="600" MinWidth="800" Height="600" Width="600" FontSize="16">
+  <Window.Resources>
+    <DataTemplate DataType="{x:Type viewModels:CustomerViewModel}">
+      <views:CustomerView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:CoffeeCupViewModel}">
+      <views:CoffeeCupView/>
+    </DataTemplate>
+  </Window.Resources>
+  
+  <Grid Background="#F05A28">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Grid>
+      <TextBlock Margin="10 0" FontWeight="Bold"
+                 FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Left">
+             <Run Text="Coffee Cup " Foreground="White" /><Run Foreground="#333333" Text="Order Administration"/>
+      </TextBlock>
+      <Image Source="Images\coffeeCup.png" Height="80" 
+             Margin="10 5 30 -25"
+             HorizontalAlignment="Right"
+             ToolTip="This is the cup you can order"/>
+    </Grid>
+    <TabControl ItemsSource="{Binding TabViewModels}"
+                SelectedItem="{Binding SelectedTabViewModel,Mode=TwoWay}"
+                Grid.Row="1" Margin="10 0 10 10">
+      <TabControl.ItemTemplate>
+        <DataTemplate>
+          <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Title}"/>
+          </StackPanel>
+        </DataTemplate>
+      </TabControl.ItemTemplate>
+    </TabControl>
+  </Grid>
+</Window>

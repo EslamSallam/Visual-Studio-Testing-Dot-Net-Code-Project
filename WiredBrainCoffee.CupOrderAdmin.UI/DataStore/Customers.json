@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Id": 1,
+    "FirstName": "Anna",
+    "LastName": "Programmer",
+    "MemberShip": 1
+  },
+  {
+    "Id": 2,
+    "FirstName": "Julia",
+    "LastName": "Developer",
+    "MemberShip": 2
+  },
+  {
+    "Id": 3,
+    "FirstName": "Thomas Claudius",
+    "LastName": "Huber",
+    "MemberShip": 1
+  }
+]
