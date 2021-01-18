@@ -34,7 +34,7 @@ namespace WiredBrainCoffee.CupOrderAdmin.Core.Services.OrderCreation
       result = new OrderCreationResult
       {
         ResultCode = OrderCreationResultCode.Success,
-        CreatedOrder = null, // TODO: Store created order in CreatedOrder property
+        CreatedOrder = createdOrder,
         RemainingCupsInStock = 0 // TODO: Store remaining cups in stock in OrderCreationResult
       };
 
